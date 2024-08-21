@@ -28,7 +28,11 @@ def load_data_to_mysql(file_paths, table_names):
                 for i in range(len(file_paths)):
                     file_path = file_paths[i]
                     table_name = table_names[i]
-                    load_query = f"""LOAD DATA LOCAL INFILE '{file_path}' INTO TABLE {table_name} FIELDS TERMINATED BY ',' ENCLOSED BY '"'  ESCAPED BY '\\\\'
+                    load_query = f"""LOAD DATA LOCAL INFILE '{file_path}' 
+                                     INTO TABLE {table_name} 
+                                     FIELDS TERMINATED BY ',' 
+                                     ENCLOSED BY '"'  
+                                     ESCAPED BY '\\\\'
                     cursor.execute(load_query)
                     db_connection.commit()
                     print(f'Data loaded from {file_path}  into MySQL table {table_name}')
