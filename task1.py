@@ -17,7 +17,7 @@ def load_data_to_mysql(file_paths, table_names):
   try:
           db_connection = MySqldb.connect(
                     host='localhost',
-                    port= '3306',
+                    port= 'xxxx',
                     database='OMNIDASH_TEST',
                     user='root',
                     password='root',
