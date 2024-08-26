@@ -42,7 +42,7 @@ def load_data_to_mysql(file_paths, table_names):
         print(f"Error: {str(e)}")
 # Example usage:
 if __name__ == '__main__':
-  file_paths = ['/home/gauri/cpucsv_opca.csv', '/home/gauri/cpucsv_optx.csv', '/home/gauri/proccsv_opca.csv', '/home/gauri/proccsv_optx.csv', '/home/gauri/di
+  file_paths = ['/home/gauri/cpucsv_opca.csv', '/home/gauri/cpucsv_optx.csv', '/home/gauri/proccsv_opca.csv', '/home/gauri/proccsv_optx.csv', '/home/gauri/disscsv_opca', '/home/gauri/disscsv_optx', '/home/gauri/tmfcsv_opca', '/home/gauri/tmfcsv_optx']
   table_names = ['cpucsv_opca', 'cpucsv_optx', 'proccsv_opca', 'proccsv_optx', 'disccsv_opca', 'disccsv_optx', 'tmfcsv_opca', 'tmfcsv_optx']
   #file_paths = ['/home/gauri/cpucsv_opca.csv']
   #table_names  = ['cpucsv_opca']
