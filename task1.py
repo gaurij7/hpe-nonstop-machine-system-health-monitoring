@@ -44,7 +44,7 @@ def load_data_to_mysql(file_paths, table_names):
 if __name__ == '__main__':
   file_paths = ['/home/gauri/cpucsv_opca.csv', '/home/gauri/cpucsv_optx.csv', '/home/gauri/proccsv_opca.csv', '/home/gauri/proccsv_optx.csv', '/home/gauri/di
   table_names = ['cpucsv_opca', 'cpucsv_optx', 'proccsv_opca', 'proccsv_optx', 'disccsv_opca', 'disccsv_optx', 'tmfcsv_opca', 'tmfcsv_optx']
-  #file_paths = ['/home/gauri/cpucsv_opca.csv', '/home/gauri/proccsv_opca.csv']
-  #table_names  = ['cpucsv_opca', 'proccsv_opca']
+  #file_paths = ['/home/gauri/cpucsv_opca.csv']
+  #table_names  = ['cpucsv_opca']
   update_csv_with_current_timestamp(file_paths)
   load_data_to_mysql(file_paths, table_names)
